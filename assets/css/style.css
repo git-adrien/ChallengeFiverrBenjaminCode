@@ -100,6 +100,9 @@ body{
     .bottom-scroll {
         font-size: 1.5em;
     }
+    .content{
+        flex-wrap: wrap-reverse;
+    }
     .img-bloc,.txt{
         width: 100%;
     }
