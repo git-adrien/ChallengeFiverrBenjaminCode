@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Benjamin Code</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/fonts/stylesheet.css">
 </head>
 <body>
     
@@ -15,9 +16,15 @@
                 <span>Benjamin Code</span>
                 <span>Benjamin Code</span>
                 <span>Benjamin Code</span>
+                <span>Benjamin Code</span>
+                <span>Benjamin Code</span>
+                <span>Benjamin Code</span>
             </div>
         </div>
         <div class="scroll bottom-scroll" >
+            <span>fullstack, creative developper and youtuber</span>
+            <span>fullstack, creative developper and youtuber</span>
+            <span>fullstack, creative developper and youtuber</span>
             <span>fullstack, creative developper and youtuber</span>
             <span>fullstack, creative developper and youtuber</span>
             <span>fullstack, creative developper and youtuber</span>
@@ -78,17 +85,14 @@
         event.preventDefault();
             mousePosition = {
                 x : event.clientX,
-                y : event.clientY
             };
+            move = (mousePosition.x * imgbloc.offsetWidth)/2
 
-            BigYellowCircle.style.left = (mousePosition.x + offset[0])*0.1 + 'px';
-            BigYellowCircle.style.top  = (mousePosition.y + offset[1])*0.1 + 'px';
+            BigYellowCircle.style.left = (move)*0.0001 + 'px';
 
-            imgBJ.style.left = (mousePosition.x + offset[0])*0.15 + 'px';
-            imgBJ.style.top  = (mousePosition.y + offset[1])*0.15 + 'px'; 
+            imgBJ.style.left = (move)*0.0002+ 'px';
 
-            LittleYellowCircle.style.left = (mousePosition.x + offset[0])*0.8 + 'px';
-            LittleYellowCircle.style.top  = (mousePosition.y + offset[1])*0.8 + 'px';
+            LittleYellowCircle.style.left = (move)*0.0008 + 'px';
     }, true);
         
 </script>

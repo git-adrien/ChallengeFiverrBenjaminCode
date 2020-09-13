@@ -19,6 +19,7 @@ body{
     height:calc(100vh - 96px);
 }
     .scroll{
+        font-family: 'gtfxebo';
         border-bottom:  7px solid var(--main-yellow) ;
         overflow: hidden;
         box-sizing: border-box;
@@ -29,7 +30,7 @@ body{
         -webkit-text-stroke: 2px var(--main-yellow);
     }
         .top-scroll,.bottom-scroll{
-            width: 400%;
+            width: 300%;
             animation: marquee 20s linear infinite;
         }
 
