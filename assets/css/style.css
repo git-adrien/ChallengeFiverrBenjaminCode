@@ -1,0 +1,96 @@
+
+body{
+    --main-blue: #000431 ;
+    --main-yellow: #FFF500;
+    background-color: var(--main-blue) ;
+    color: var(--main-yellow);
+
+    margin: 0;
+    height: 100%; 
+    overflow: hidden
+}
+
+
+.main{
+    margin: 48px;
+    border: 7px solid var(--main-yellow) ;
+    overflow: hidden;
+    width:calc(100vw - 96px);
+    height:calc(100vh - 96px);
+}
+    .scroll{
+        border-bottom:  7px solid var(--main-yellow) ;
+        overflow: hidden;
+        box-sizing: border-box;
+        position: relative;
+    }
+    .scroll span:nth-child(2n){
+        color: var(--main-blue);
+        -webkit-text-stroke: 2px var(--main-yellow);
+    }
+        .top-scroll,.bottom-scroll{
+            width: 400%;
+            animation: marquee 20s linear infinite;
+        }
+
+        .top-scroll{
+            font-size: 8em;
+        }
+        .bottom-scroll{
+            font-size: 3em;
+            animation-direction:reverse;
+        }
+
+    .content{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+        .img-bloc{
+            width: 50%;
+            position: relative;
+        }
+        .BigYellowCircle{
+            position: absolute;
+            background-color: var(--main-yellow);
+            border-radius: 50%;
+            height: 514px;
+            width: 514px;
+            top: 96px;
+            left: 48px;
+        }
+        .LittleYellowCircle{
+            position: absolute;
+            background-color: var(--main-yellow);
+            border-radius: 50%;
+            height: 30px;
+            width: 30px;
+            top: 80%;
+            left: 48%;
+        }
+        .img-bloc img{
+            position: absolute;
+            max-width: 71%;
+            bottom: 0;
+        }
+
+    .txt{
+        width: 30%;
+        height: 80%;
+        padding: 10%;
+        line-height: 28px;
+        font-size: 16px;
+    }
+    .mail{
+        font-size: 16px;
+    }
+    .mail svg{
+        height: 16px;
+        fill: var(--main-yellow);
+    }
+
+
+@keyframes marquee {
+    0% { left: 0; }
+    100% { left: -100%; }
+}
