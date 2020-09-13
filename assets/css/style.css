@@ -90,6 +90,20 @@ body{
         fill: var(--main-yellow);
     }
 
+@media screen and (max-width: 1080px) {
+    body{
+        overflow: initial;
+    }
+    .top-scroll {
+        font-size: 4em;
+    }
+    .bottom-scroll {
+        font-size: 1.5em;
+    }
+    .img-bloc,.txt{
+        width: 100%;
+    }
+}
 
 @keyframes marquee {
     0% { left: 0; }
