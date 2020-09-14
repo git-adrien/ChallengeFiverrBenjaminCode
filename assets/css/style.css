@@ -5,6 +5,7 @@ body{
     background-color: var(--main-blue) ;
     color: var(--main-yellow);
 
+    padding: 40px;
     margin: 0;
     height: 100%; 
     overflow: hidden
@@ -12,11 +13,10 @@ body{
 
 
 .main{
-    margin: 48px;
     border: 7px solid var(--main-yellow) ;
     overflow: hidden;
-    width:calc(100vw - 96px);
-    height:calc(100vh - 96px);
+    width:calc(100vw - 80px);
+    height:calc(100vh - 80px);
 }
     .scroll{
         font-family: 'gtfxebo';
@@ -31,7 +31,7 @@ body{
     }
         .top-scroll,.bottom-scroll{
             width: 300%;
-            animation: marquee 20s linear infinite;
+            animation: marquee 25s linear infinite;
         }
 
         .top-scroll{
@@ -40,6 +40,7 @@ body{
         .bottom-scroll{
             font-size: 3em;
             animation-direction:reverse;
+            letter-spacing: 2px;
         }
 
     .content{
@@ -57,8 +58,8 @@ body{
             border-radius: 50%;
             height: 514px;
             width: 514px;
-            top: 96px;
-            left: 48px;
+            top: 30px;
+            left: 60px;        
         }
         .LittleYellowCircle{
             position: absolute;
@@ -71,7 +72,7 @@ body{
         }
         .img-bloc img{
             position: absolute;
-            max-width: 71%;
+            max-width: 85%;
             bottom: 0;
         }
 

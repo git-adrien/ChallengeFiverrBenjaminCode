@@ -27,7 +27,6 @@
             <span>fullstack, creative developper and youtuber</span>
             <span>fullstack, creative developper and youtuber</span>
             <span>fullstack, creative developper and youtuber</span>
-            <span>fullstack, creative developper and youtuber</span>
         </div>
 
         <div class="content">
@@ -84,13 +83,16 @@
             mousePosition = {
                 x : event.clientX,
             };
-            move = (mousePosition.x * imgbloc.offsetWidth)/2
+             move = ((mousePosition.x * imgbloc.offsetWidth)/2)* 0.00001
 
-            BigYellowCircle.style.left = (move)*0.0001 + 'px';
+             console.log(move)
+            //move = (event.clientX - window.innerWidth / 2) / window.innerWidth  * 2;
 
-            imgBJ.style.left = (move)*0.0002+ 'px';
+            BigYellowCircle.style.transform = `translate3d(calc(${-move} * 2vh), 0, 0)`;
+                        
+            imgBJ.style.transform = `translate3d(calc(${move} * 1vh), 0, 0)`;
 
-            LittleYellowCircle.style.left = (move)*0.0008 + 'px';
+            LittleYellowCircle.style.transform =`translate3d(calc(${move} * 2vh), 0, 0)`;
     }, true);
         
 </script>
