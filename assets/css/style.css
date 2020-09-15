@@ -83,6 +83,12 @@ body{
         line-height: 28px;
         font-size: 16px;
     }
+    .txt a{
+        text-decoration: none;
+        color: var(--main-yellow);
+        border-bottom: 2px solid var(--main-yellow);
+        padding-bottom: 2px;
+    }
     .mail{
         font-size: 16px;
     }
